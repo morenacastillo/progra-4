@@ -8,5 +8,12 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('progra-clase1');
+  protected readonly title = signal('clase1');
+
+  miPropiedad = signal('valor inicial');
+  miTexto: string = 'valor inicial';
+  miNumero: number = 0;
+  miBool: boolean = false;
+  miArray: string[] = ['valor1', 'valor2', 'valor3'];
+  
 }

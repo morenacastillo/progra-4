@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "progra-clase1": {
+    "clase1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "progra-clase1:build:production"
+              "buildTarget": "clase1:build:production"
             },
             "development": {
-              "buildTarget": "progra-clase1:build:development"
+              "buildTarget": "clase1:build:development"
             }
           },
           "defaultConfiguration": "development"
