@@ -40,6 +40,6 @@ export class MiComponente {
     this.resultado = 0;
     this.promedio = 0;
   }
-  }
+}
 
 

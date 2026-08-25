@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MiComponente } from './componentes/mi-componente/mi-componente';
+import { Login } from './componentes/login/login'
 import { NgIf, NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [MiComponente, NgIf, NgFor, FormsModule ],
+  imports: [MiComponente, NgIf, NgFor, FormsModule, Login ],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
@@ -22,6 +23,7 @@ export class App {
   miDato;
   edadUno: number = 0;
   edadDos: number = 0;
+  
 
   constructor() {
     this.miDato = "valor inicial";
