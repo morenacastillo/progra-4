@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1 class="titulo">hola mundo</h1>
-  
-</body>
-</html>
+<h1 class="titulo">hola mundo</h1>
+<!--
+<app-mi-componente *ngIf="miBool"></app-mi-componente>     DIRECTIVA
+@if (miBool) {      CONTROL DE FLUJO
+  <app-mi-componente></app-mi-componente>
+}
+
+<br>
+
+<app-mi-componente *ngFor="let item of miArray"></app-mi-componente>
+@for (item of miArray; track item) {
+  <app-mi-componente></app-mi-componente>
+}
+
+
+ no es posible tener 2 condiciones sobre una directiva
+<br>
+<ng-container *ngFor="let item of miArray">       ng-container son cajas logicas, no es posible aplicarles css
+  <app-mi-componente *ngIf="item == 'valor3'"></app-mi-componente>
+</ng-container>
+-->
+
+@for (item of miArray; track item) {
+  @if (item == 'valor1') {
+  <app-mi-componente></app-mi-componente>
+  }
+}
