@@ -1,7 +1,7 @@
 <h1 class="titulo">hola mundo</h1>
 <!--
-<app-mi-componente *ngIf="miBool"></app-mi-componente>     DIRECTIVA
-@if (miBool) {      CONTROL DE FLUJO
+<app-mi-componente *ngIf="miBool"></app-mi-componente>         DIRECTIVA
+@if (miBool) {                                                 CONTROL DE FLUJO
   <app-mi-componente></app-mi-componente>
 }
 
@@ -13,7 +13,8 @@
 }
 
 
- no es posible tener 2 condiciones sobre una directiva
+no es posible tener 2 condiciones sobre una directiva
+
 <br>
 <ng-container *ngFor="let item of miArray">       ng-container son cajas logicas, no es posible aplicarles css
   <app-mi-componente *ngIf="item == 'valor3'"></app-mi-componente>

@@ -2,9 +2,10 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MiComponente } from './componentes/mi-componente/mi-componente';
 import { NgIf, NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [MiComponente, NgIf, NgFor ],
+  imports: [MiComponente, NgIf, NgFor, FormsModule ],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
@@ -19,6 +20,8 @@ export class App {
   miArray: string[] = ['valor1', 'valor2', 'valor3'];
   miAny: any = '{"clave": "valor"}';
   miDato;
+  edadUno: number = 0;
+  edadDos: number = 0;
 
   constructor() {
     this.miDato = "valor inicial";
@@ -27,7 +30,7 @@ export class App {
       this.miPropiedad.set('nuevo valor');
       this.miTexto = "nuevo valor"
     }, 1000);
-
   }
+
 
 }

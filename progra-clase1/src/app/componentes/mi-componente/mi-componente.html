@@ -1,6 +1,18 @@
 
 <h3>{{ miDato()}}</h3>
 
-<input type="text" [(ngModel)]="miDato"/>
 
-<button (click)="cambiarValor('nuevo valor')">Cambiar valor</button>
+<input type="number" [(ngModel)]="edadUno" name="edadUno"/><br>
+<input type="number" [(ngModel)]="edadDos" name="edadDos"/>
+<br>
+<br>
+<button (click)="calcularSuma()">Calcular suma</button>
+<br>
+<br>
+<button (click)="calcularPromedio()">Calcular promedio</button>
+<br>
+<br>
+<button (click)="limpiar()">Limpiar cuadros de texto</button>
+
+
+
