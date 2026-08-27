@@ -1,0 +1,19 @@
+<div class="detalle-container">
+    <h1>Detalle del item</h1>
+
+    @if (itemEncontrado()) {
+        <div class="detalle-card">
+            <div class="detalle-row">
+                <span class="detalle-label">Id</span>
+                <span class="detalle-value">{{itemEncontrado()?.id}}</span>
+            </div>
+            <div class="detalle-row">
+                <span class="detalle-label">Nombre</span>
+                <span class="detalle-value">{{itemEncontrado()?.name}}</span>
+            </div>
+        </div>
+    } @else {
+        <p class="detalle-vacio">Item no encontrado</p>
+    }
+
+</div>

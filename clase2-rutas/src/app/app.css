@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.25);
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.navbar a.active {
+  background-color: rgba(255, 255, 255, 0.22);
+  font-weight: 600;
+}

@@ -1,0 +1,95 @@
+:host {
+  display: block;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1f2937;
+}
+
+.items-container {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.items-container h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.items-container .subtitle {
+  margin: 0 0 1.5rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+.items-table thead {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+}
+
+.items-table th {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.items-table td {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid #f0f0f3;
+  font-size: 0.95rem;
+}
+
+.items-table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.items-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.items-table tbody tr:hover {
+  background-color: #f3f0ff;
+}
+
+.items-table a,
+.items-table button,
+.items-table .button {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background: #6366f1;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.items-table a:hover,
+.items-table button:hover,
+.items-table .button:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}

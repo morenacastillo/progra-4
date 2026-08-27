@@ -1,0 +1,33 @@
+<div class="items-container">
+    <h1>Items</h1>
+
+    <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero ut ea natus cupiditate. Cumque, perferendis. Enim aliquid, quae alias harum eos fugit, qui asperiores magnam, quibusdam ullam nostrum totam.</p>
+
+    <table class="items-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+            @for (item of items; track $index) {
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>
+                        <!--<button (click)="navegar(item.id)">Ver detalle</button> -->
+                        <!-- <a [routerLink]="['detalle', item.id]">Ver detalle</a> -->
+                        <!-- LAS COMAS REPRESENTAN BARRAS /-->
+                        <button class="button" [routerLink]="['detalle']" [queryParams]="{id: item.id}">Ver detalle</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<router-outlet></router-outlet>
