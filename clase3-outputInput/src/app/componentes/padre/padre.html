@@ -1,0 +1,17 @@
+<div class="padre">
+    
+    <app-hijo 
+    [dataSignal]="valor" 
+    (datoDelHijoSignal)="recibirDatoSignal($event)"></app-hijo>
+    
+    <app-hijo2 [datoHijo2]="datoDelHijoSignal"></app-hijo2>
+
+
+
+    <!--{{datoDelHijo}}
+    {{modeloDelHijo()}}
+    {{datoDelHijoSignal}}-->
+
+
+
+</div>

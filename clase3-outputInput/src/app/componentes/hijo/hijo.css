@@ -1,0 +1,14 @@
+.hijo {
+    background-color: rgb(221, 173, 230);
+    width: 240px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid black;
+}
