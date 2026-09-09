@@ -1,0 +1,23 @@
+<h1>Items</h1>
+
+<table>
+  <thead>
+    <tr><th>ID</th><th>Nombre</th><th></th></tr>
+  </thead>
+  <tbody>
+    @for (item of items; track item.id) {
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>
+          <!-- ['detalle', item.id]  ->  /items/detalle/<id>
+               cada posición del array es un segmento (una barra /) -->
+          <a [routerLink]="['detalle', item.id]">Ver detalle</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<!-- SEGUNDO outlet: acá adentro se dibuja la ruta hija (detalle) -->
+<router-outlet></router-outlet>

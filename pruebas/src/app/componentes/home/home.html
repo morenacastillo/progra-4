@@ -1,0 +1,13 @@
+<!-- [class.oscuro]="modoOscuro()"  ->  agrega/saca la clase CSS 'oscuro' segun el signal -->
+<div class="pantalla" [class.oscuro]="modoOscuro()">
+
+  <p>home works!</p>
+  <h2>Bienvenida 👋</h2>
+  <p>Modo oscuro: <strong>{{ modoOscuro() }}</strong></p>
+
+  <div class="links">
+    <!-- [queryParams] arma el "?dark=..." en la URL -->
+    <a routerLink="/home" [queryParams]="{ dark: true }">Activar oscuro</a>
+    <a routerLink="/home" [queryParams]="{ dark: false }">Desactivar</a>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: #f0f1f4;
+  border-radius: 10px;
+}
+:host h3 { margin-top: 0; }

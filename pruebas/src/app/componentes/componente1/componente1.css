@@ -1,0 +1,10 @@
+/* ===================== componente1 ===================== */
+
+p:last-child { margin: 0; }
+p + p {
+  padding: 10px 12px;
+  background: #f0f1f4;
+  border-radius: 8px;
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+  font-size: .95rem;
+}

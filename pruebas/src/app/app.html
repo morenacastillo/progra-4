@@ -1,0 +1,40 @@
+<h1 class="titulo">hola mundo desde app</h1>
+
+@if (!router.url.startsWith('/login')) {
+<div class="navbar">
+  <a routerLinkActive="active" routerLink="/home">Home</a>
+  <a routerLinkActive="active" routerLink="/componente1">Componente 1</a>
+  <a routerLinkActive="active" routerLink="/componente2">Componente 2</a>
+  <a routerLinkActive="active" routerLink="/componente3">Componente 3</a>
+  <a routerLinkActive="active" routerLink="/calculos">Calculos</a>
+  <a routerLinkActive="active" routerLink="/items">Items</a>
+  <a routerLinkActive="active" routerLink="/clase3">Clase 3</a>
+</div>
+}
+
+<router-outlet></router-outlet>
+
+<!--
+<hr>
+<hr>
+<h1>COMPONENTE 1</h1>
+<app-componente1></app-componente1>
+<hr>
+
+<hr>
+<h1>COMPONENTE 2</h1>
+<app-componente2></app-componente2>
+<hr>
+
+
+<hr>
+<h1>COMPONENTE 3</h1>
+<app-componente3></app-componente3>
+<hr>
+
+
+<hr>
+<h1>COMPONENTE CALCULOS</h1>
+<app-calculos></app-calculos>
+<hr>
+-->

@@ -1,0 +1,9 @@
+/* ===================== componente3 ===================== */
+
+/* el valor que se va escribiendo (bindeado con ngModel) */
+p:last-child {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #4f46e5;
+}

@@ -1,0 +1,14 @@
+/* ===================== login ===================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* los <br> del template no aportan nada dentro del flex */
+form br { display: none; }
+
+form button {
+  align-self: flex-start;
+  margin-top: 8px;
+}

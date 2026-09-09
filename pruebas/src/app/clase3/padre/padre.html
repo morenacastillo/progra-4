@@ -1,0 +1,7 @@
+<p>padre works!</p>
+
+<p>Recibí del abuelo: {{ dataSignal() }}</p>
+
+<app-hijo (datoDesdeHijo)="recibirDatoSignal($event)"></app-hijo>
+
+<p> Recibi del hijo: {{ datoRecibidoDelHijo }}</p>

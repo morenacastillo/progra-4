@@ -1,0 +1,8 @@
+<h3>Detalle</h3>
+
+@if (itemEncontrado()) {
+  <p><strong>ID:</strong> {{ itemEncontrado()?.id }}</p>
+  <p><strong>Nombre:</strong> {{ itemEncontrado()?.name }}</p>
+} @else {
+  <p>No se encontró ningún item con ese id.</p>
+}

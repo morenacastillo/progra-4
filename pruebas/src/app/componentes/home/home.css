@@ -1,0 +1,18 @@
+.pantalla {
+  padding: 20px;
+  border-radius: 10px;
+  transition: background .2s ease, color .2s ease;
+}
+
+/* modo oscuro: se aplica cuando el <div> tiene la clase 'oscuro' */
+.pantalla.oscuro {
+  background: #111318;
+  color: #ffffff;
+}
+.pantalla.oscuro a { color: #8ab4ff; }
+
+.links {
+  margin-top: 14px;
+  display: flex;
+  gap: 14px;
+}

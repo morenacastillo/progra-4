@@ -1,0 +1,5 @@
+table { border-collapse: collapse; width: 100%; margin-bottom: 18px; }
+th, td { border: 1px solid #e0e2e6; padding: 8px 10px; text-align: left; }
+th { background: #f0f1f4; font-weight: 600; }
+td a { color: #4f46e5; font-weight: 600; text-decoration: none; }
+td a:hover { text-decoration: underline; }

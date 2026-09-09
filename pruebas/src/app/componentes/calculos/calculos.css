@@ -1,0 +1,16 @@
+/* ===================== calculos ===================== */
+
+/* los <br> sueltos ya no hacen falta: cada control cae en su renglón */
+br { display: none; }
+
+button { display: block; }
+
+/* las dos últimas líneas son Suma y Promedio: las resaltamos */
+p:nth-last-child(2),
+p:last-child {
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  font-weight: 600;
+  background: #f0f1f4;
+  border-radius: 8px;
+}
