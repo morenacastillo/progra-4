@@ -33,6 +33,6 @@ export class App {
       this.miTexto = "nuevo valor"
     }, 1000);
   }
-
-
 }
+
+// APP es mi componente principal en .ts .htlm  y .css

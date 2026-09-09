@@ -10,11 +10,8 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
 export class App {
   protected readonly title = signal('clase2-rutas');
 
-  constructor(private router: Router) {
 
-  }
+  
 
-  navegar() {
-    this.router.navigate(['/items']);
-  }
+  
 }
