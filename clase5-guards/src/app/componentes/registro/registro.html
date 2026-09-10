@@ -1,0 +1,16 @@
+<p>registro works!</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="username">Username</label>
+    <input id="username" formControlName="username" type="text">
+    <br>
+    <label for="password">Password</label>
+    <input id="password" formControlName="password" type="password">
+    <br>
+    <button type="submit">Registrar</button>
+    <div *ngIf="submitted && form.invalid">
+        <p *ngIf="form.get('username')?.errors?.['required']">Usuario es requerido</p>
+        <p *ngIf="form.get('password')?.errors?.['required']">Password es requerido</p>
+    </div>
+
+</form>

@@ -1,0 +1,86 @@
+/* Estilos globales de la app */
+
+:root {
+  --color-fondo: #f4f6fb;
+  --color-superficie: #ffffff;
+  --color-texto: #1f2933;
+  --color-texto-suave: #616e7c;
+  --color-primario: #3b5bdb;
+  --color-primario-hover: #2f49b0;
+  --color-borde: #d9e2ec;
+  --color-error: #d64545;
+  --color-ok: #2f9e44;
+  --radio: 10px;
+  --sombra: 0 4px 14px rgba(15, 23, 42, 0.08);
+  --fuente: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--fuente);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.75rem;
+}
+
+p {
+  color: var(--color-texto-suave);
+}
+
+button {
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radio);
+  padding: 0.6rem 1.2rem;
+  background-color: var(--color-primario);
+  color: #fff;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+button:hover {
+  background-color: var(--color-primario-hover);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+input {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  background-color: #fff;
+  color: var(--color-texto);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 3px rgba(59, 91, 219, 0.15);
+}
+
+router-outlet + * {
+  display: block;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}

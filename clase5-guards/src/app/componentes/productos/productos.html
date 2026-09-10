@@ -1,0 +1,15 @@
+<h1>productos</h1>
+<ul>
+    <li *ngFor="let producto of productos()">
+        <div class="item"> 
+            {{ producto.nombre }} 
+            <button [routerLink]="['./detalle', producto.id]">Detalle</button>
+        </div>
+
+    </li>
+</ul>
+
+<div class="detalle">
+    <p>detalle del prod seleccionado</p>
+    <router-outlet></router-outlet>
+</div>

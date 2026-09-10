@@ -1,0 +1,15 @@
+<p>login works!</p>
+
+<div class="login">
+    <input type="text" [(ngModel)]="username" placeholder="Username">
+    <input type="password" [(ngModel)]="password" placeholder="Password">
+    <button (click)="login()">Login</button>
+    @if (loginError()) {
+        <small>
+            login failed.
+        </small>
+    }
+
+<button [routerLink]="['/registro']">Registrarse</button>
+
+</div>
