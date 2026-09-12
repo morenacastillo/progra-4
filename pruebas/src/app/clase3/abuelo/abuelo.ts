@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Padre } from '../padre/padre';
+import { model } from '@angular/core';
 
 @Component({
   imports: [Padre],
@@ -9,4 +10,10 @@ import { Padre } from '../padre/padre';
 })
 export class Abuelo {
   valor = 'Hola, soy el abuelo';
+
+  datoModelo = 'hola hola hola hola';
+
+  modificarDato () {
+    this.datoModelo = "chau chau chau"
+  }
 }

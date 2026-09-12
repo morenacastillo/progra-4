@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { Hijo } from '../hijo/hijo';
+import { model } from '@angular/core';
 
 @Component({
   imports: [Hijo],
@@ -13,8 +14,15 @@ export class Padre {
   datoParaHijo: string = "hola hijo, soy el padre"
   datoRecibidoDelHijo: string = ''
 
+  miModelo = model<string>('')
+
+
   recibirDatoSignal(dato: string) {
     this.datoRecibidoDelHijo = dato ;
 
+  }
+
+  modificarDato () {
+    this.miModelo.set("aaaaaaaaaaaaaaa")
   }
 }

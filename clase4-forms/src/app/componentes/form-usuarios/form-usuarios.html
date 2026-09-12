@@ -1,0 +1,23 @@
+<p>form-usuarios works!</p>
+
+<form class="form" [formGroup]="formUsuarios" (ngSubmit)="mostrarEstado()">
+    <div>
+        <label for="user">User  </label>
+        <input type="text" id="user" formControlName="user" placeholder="usuario">
+    </div>
+
+    <div>
+        <label for="pass">Password  </label>
+        <input type="password" id="pass" formControlName="pass" placeholder="constraseña">
+    </div>
+
+    <div>
+        <label for="confirmarPass">Confirmar password  </label>
+        <input type="confirmarPass" id="pass" formControlName="confirmarPass" placeholder="Confirmar constraseña">
+    </div>
+
+    <div>
+        <button type="submit" [disabled]="! this.formUsuarios.valid">Cargar usuario</button>
+        <button type="reset">Limpiar</button>
+    </div>
+</form>

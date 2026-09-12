@@ -1,7 +1,13 @@
 <p>padre works!</p>
 
-<p>Recibí del abuelo: {{ dataSignal() }}</p>
+<p>Recibí del abuelo: {{ miModelo() }}</p>
 
+<button (click)="modificarDato()">modificar Dato</button>
+
+
+<!--<app-hijo [dataSignal]="datoParaHijo" ></app-hijo> envia dato para hijo -->
+<hr>
+<hr>
 <app-hijo (datoDesdeHijo)="recibirDatoSignal($event)"></app-hijo>
 
 <p> Recibi del hijo: {{ datoRecibidoDelHijo }}</p>

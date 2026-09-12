@@ -17,7 +17,7 @@ export class ListaUsuarios implements OnInit{
   constructor(private http: Http) {}
 
   ngOnInit(): void {
-    this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((users) => { // peticion y suscripcion a jsonplaceholder
+    this.suscription = this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((users) => { // peticion y suscripcion a jsonplaceholder
       this.listaUsuarios.set(users)
     })
   }
