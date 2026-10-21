@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe, HttpStatus } from '@nestjs/common';
 import { AlumnosService } from './alumnos.service.js';
 import { CreateAlumnoDto } from './dto/create-alumno.dto.js';
 import { UpdateAlumnoDto } from './dto/update-alumno.dto.js';
@@ -16,9 +16,9 @@ export class AlumnosController {
   findAll() {
     return this.alumnosService.findAll();
   }
-
+  
   @Get(':id')
-  findOne(@Param('id') id: string) {
+  findOne(@Param('id', new ParseIntPipe({ errorHttpStatusCode: HttpStatus.NOT_ACCEPTABLE})) id: number) {
     return this.alumnosService.findOne(+id);
   }
 
@@ -28,11 +28,7 @@ export class AlumnosController {
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
+  remove(@Param('id', new ParseIntPipe({ errorHttpStatusCode: HttpStatus.NOT_ACCEPTABLE})) id: string) {
     return this.alumnosService.remove(+id);
-  }
-
-  test() {
-    return this.usuariosService.getAll()
   }
 }
